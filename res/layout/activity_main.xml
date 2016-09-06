@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/btnInvokeFromJava"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Java invoke" />
+
+    <Button
+        android:id="@+id/btnChooseCert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose KeyStore and Initial Java Object" />
+
+    <Button
+        android:id="@+id/btnInvokeFromC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="C invoke" />
+    
+    <ScrollView android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:id="@+id/sclView"	>
+		<TextView android:id="@+id/txtLog"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:textSize="14sp">
+		</TextView>
+	</ScrollView>
+    
+ </LinearLayout>
