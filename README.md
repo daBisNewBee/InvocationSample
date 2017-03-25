@@ -1,3 +1,7 @@
+# 2017-03-25更新
+- 在JNI中反向调用android.app.ActivityThread中的currentApplication，可以获取Context对象。免去提前由Java初始化对象至native中的过程。
+- 参考：[Android安全系列之：如何在native层保存关键信息](http://www.jianshu.com/p/2576d064baf1)
+
 # InvocationSample
 描述了C调用Java的基本用法，包括Java发起的和C发起的调用。其中，解决了C中创建Java对象时，无法获取Android中Conetxt衍生对象（Activity、Service）导致无法创建Java对象的问题。
 
